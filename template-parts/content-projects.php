@@ -8,11 +8,13 @@ get_header();
   
   if ( is_page("projects") ) :  ?>
 
+<?php echo do_shortcode('[wonderplugin_slider id="1"]'); ?>
+
  
         <?php $post_id = 63; 
                 $post_object  = get_post( $post_id );  ?>
 
-<?php echo do_shortcode('[wonderplugin_slider id="1"]'); ?>
+       
 
                 <div class="projects-page-heading">
                     <?php echo $post_object->post_title; ?> 
