@@ -2,7 +2,6 @@
 get_header(); 
 ?>
 
-
 <div id="primary" class="content-area">
   <main id="main" class="site-main">
 
@@ -127,8 +126,7 @@ get_header();
                     </div>
 
                     <div class="learn-more hide">
-                    <a href="<?php echo get_permalink($post_id); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?>
-                            <?php echo $post_object->post_excerpt; ?>
+                        <?php echo $post_object->post_excerpt; ?>
                     </div>
             </div>
 
@@ -151,8 +149,7 @@ get_header();
                 </div>
 
                 <div class="learn-more hide">
-                <a href="<?php echo get_permalink($post_id); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?>
-                            <?php echo $post_object->post_excerpt; ?>
+                        <?php echo $post_object->post_excerpt; ?>
                 </div>
             </div>
             </div>
@@ -174,8 +171,7 @@ get_header();
                 </div>
 
                 <div class="learn-more hide">
-                <a href="<?php echo get_permalink($post_id); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?>
-                            <?php echo $post_object->post_excerpt; ?>
+                        <?php echo $post_object->post_excerpt; ?>
                 </div>
             </div>
             </div>
@@ -196,8 +192,7 @@ get_header();
                 </div>
 
                 <div class="learn-more hide">
-                <a href="<?php echo get_permalink($post_id); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?>
-                            <?php echo $post_object->post_excerpt; ?>
+                        <?php echo $post_object->post_excerpt; ?>
                 </div>
         </div>
         </div>
@@ -216,8 +211,7 @@ get_header();
                 </div>
 
                 <div class="learn-more hide">
-                <a href="<?php echo get_permalink($post_id); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?>
-                            <?php echo $post_object->post_excerpt; ?>
+                        <?php echo $post_object->post_excerpt; ?>
                 </div>
         </div>
 
@@ -237,8 +231,7 @@ get_header();
                 </div>
 
                 <div class="learn-more hide">
-                <a href="<?php echo get_permalink($post_id); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?>
-                            <?php echo $post_object->post_excerpt; ?>
+                        <?php echo $post_object->post_excerpt; ?>
                 </div>
         </div>
         </div>
@@ -257,8 +250,7 @@ get_header();
     </div>
 
     <div class="learn-more hide">
-    <a href="<?php echo get_permalink($post_id); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?>
-                            <?php echo $post_object->post_excerpt; ?>
+            <?php echo $post_object->post_excerpt; ?>
     </div>
 </div>
 </div>
@@ -292,10 +284,13 @@ get_header();
 
     </div>
 
-<?php 
+  </main>
+
+  
+
+<?php
 
 endif;
-
 
 get_footer();
 
