@@ -18,7 +18,7 @@ get_header();
 
                 <div class="about-page-info">
 
-                    <img src ="<?php echo get_the_post_thumbnail_url('medium'); ?>" alt =""> 
+                    <?php the_post_thumbnail('medium'); ?>
 
                     <div class="about-page-content">
                         <?php the_content(); ?>
