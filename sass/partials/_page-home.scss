@@ -113,12 +113,12 @@
   }
 }
 
-.home-projects > img:hover {
+.home-projects:hover > img {
   opacity: 30%;
 }
 
-.home-projects > img:hover ~ .projects-info {
-  overflow: visible;
+.home-projects:hover .projects-info {
+  opacity: 1;
   transition: all 0.5s ease-in-out;
 }
 
@@ -139,7 +139,7 @@
 
 .projects-info {
   transition: all 0.5s ease-in-out;
-  overflow: hidden;
+  opacity: 0;
   position: absolute;
   width: 20rem;
   left: 50%;
