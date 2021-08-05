@@ -1,0 +1,443 @@
+/*
+Theme Name: rachelthutrata
+Author:  Rachel Thu Tra Ta
+Description: My Portfolio
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: customloop
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/* 
+Table of Content 
+1. Reset
+2. Typography
+3. Navigation
+4. Posts and Pages
+5. Media
+6. Forms
+7. Comments 
+8. Accessibility
+9. Elements
+
+
+*/
+/* 2. Typography  ======================================= */
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+}
+
+button {
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+}
+
+p {
+  font-weight: 100;
+}
+
+/* 2. Elements  ======================================= */
+body {
+  width: 100%;
+  min-height: 100%;
+  color: #E8E8E8;
+}
+
+body a, body button {
+  color: #E8E8E8;
+}
+
+body {
+  margin: 0;
+  background-color: #30475E;
+}
+
+/* 3. Buttons  ================================== */
+.wp-block-button__link {
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  background-color: #F05454;
+  border-color: #F05454;
+  border-style: none;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 2rem;
+}
+
+.wp-block-button__link:hover {
+  background-color: #04c2c9;
+  color: #1B1B2F;
+  transition: all 0.5s ease;
+}
+
+/* 3. Header  ================================== */
+.site-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100000;
+}
+
+.site-header .header-image {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-header .header-image a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.site-header .header-image .site-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-header .header-image .site-title p {
+  margin: 1rem;
+}
+
+.menu-main-menu-container {
+  background-color: #222831;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #04c2c9;
+}
+
+#menu-main-menu {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#menu-main-menu li {
+  list-style-type: none;
+  padding: 0.5rem 1rem 0 1rem;
+}
+
+#menu-main-menu a {
+  text-decoration: none;
+}
+
+#menu-main-menu a:hover {
+  color: #F05454;
+}
+
+#menu-main-menu a:active {
+  color: #F05454;
+}
+
+/* 3. Footer  ================================== */
+.site-footer {
+  background-color: #222831;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.site-footer .social-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.site-footer .social-menu li {
+  list-style-type: none;
+  margin: 1rem;
+}
+
+.site-footer .social-menu a {
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.social-menu a[href^="https://www.facebook.com"]:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f09a";
+}
+
+.social-menu a[href^="https://github.com"]:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f09b";
+}
+
+.social-menu a[href^="https://www.linkedin.com"]:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f0e1";
+}
+
+.page-id-2 .site-footer {
+  margin-top: 17rem;
+}
+
+/* 5. Media  ============================= */
+/* 7. Forms   =================================== */
+/* 8. Page about   =================================== */
+.about-page {
+  background-color: #30475E;
+  height: 90vh;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+}
+
+.about-page-info {
+  width: 70%;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.about-page-info p {
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+.about-page-info img {
+  margin: 3rem;
+}
+
+.about-page-info .about-page-content {
+  font-size: 2rem;
+  color: #E8E8E8;
+}
+
+.about-page-title {
+  margin: 4rem;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* 8. Page projects   =================================== */
+.projects-page {
+  width: 70vw;
+  margin: auto;
+  height: auto;
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.projects-page img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.projects-page .projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-page .projects-title {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.projects-content p {
+  width: 70%;
+}
+
+.projects-page-heading {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 3rem;
+}
+
+/* 8. Page home   =================================== */
+.home-page-header {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page-header p {
+  font-size: 2rem;
+}
+
+.home-about-page {
+  background-color: #E8E8E8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-wrap {
+  color: black;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-info .about-img {
+  display: flex;
+  justify-content: center;
+}
+
+.about-info .about-content {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #1B1B2F;
+}
+
+.about-info .about-content p {
+  width: 80%;
+  font-weight: 400;
+  text-align: center;
+}
+
+.about-title {
+  margin: 4rem;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  color: black;
+}
+
+.about-skills {
+  color: black;
+  justify-self: center;
+  font-size: 1.5rem;
+}
+
+.about-skills .skills-title {
+  display: none;
+}
+
+.about-skills ul li {
+  list-style-type: none;
+  border: 1px solid #04c2c9;
+  border-radius: 1rem;
+  padding: 0.5rem 8rem;
+  background-color: #04c2c9;
+  margin: 0.5rem;
+}
+
+.home-projects-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projects-wrap {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: flex-start;
+  margin: 3rem;
+}
+
+.home-projects {
+  text-align: center;
+  position: relative;
+}
+
+.home-projects img {
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+
+.home-projects > img:hover {
+  opacity: 30%;
+}
+
+.home-projects > img:hover ~ .projects-info {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+
+.learn-more {
+  font-weight: bold;
+  padding: 0.5rem 0;
+  margin: 1rem 5rem;
+  background-color: #F05454;
+  transition: all 0.5s ease-in-out;
+}
+
+.projects-name {
+  font-weight: bold;
+  padding: 1rem 0;
+  background-color: #F05454;
+  transition: all 0.5s ease-in-out;
+}
+
+.projects-info {
+  transition: all 0.5s ease-in-out;
+  display: none;
+  position: absolute;
+  width: 20rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-projects-title {
+  margin: 2rem;
+  font-weight: bolder;
+  font-size: 3rem;
+  border-bottom: 1px solid #E8E8E8;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.home-contact-page {
+  height: 50vh;
+  background-color: #1B1B2F;
+}

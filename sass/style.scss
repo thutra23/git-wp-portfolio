@@ -1,0 +1,52 @@
+/*
+Theme Name: rachelthutrata
+Author:  Rachel Thu Tra Ta
+Description: My Portfolio
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: customloop
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* 
+Table of Content 
+1. Reset
+2. Typography
+3. Navigation
+4. Posts and Pages
+5. Media
+6. Forms
+7. Comments 
+8. Accessibility
+9. Elements
+
+
+*/
+
+// Variables
+@import "partials/variables/variables";
+/* 2. Typography  ======================================= */
+@import "partials/typography";
+/* 2. Elements  ======================================= */
+@import "partials/elements";
+/* 3. Buttons  ================================== */
+@import "partials/buttons";
+/* 3. Header  ================================== */
+@import "partials/header";
+/* 3. Footer  ================================== */
+@import "partials/footer";
+/* 5. Media  ============================= */
+@import "partials/media";
+/* 7. Forms   =================================== */
+@import "partials/forms";
+/* 8. Page about   =================================== */
+@import "partials/page-about";
+/* 8. Page projects   =================================== */
+@import "partials/page-projects";
+/* 8. Page home   =================================== */
+@import "partials/page-home";
+
+
+

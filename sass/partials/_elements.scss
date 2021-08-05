@@ -1,0 +1,16 @@
+body {
+    width: 100%;
+    min-height: 100%;
+    color: $color_body_text; 
+
+    a, button {
+        color: $color_body_text;  
+    }
+}
+
+body  {
+    margin: 0;
+    background-color: $color_body_bg;
+}
+
+

@@ -1,0 +1,90 @@
+
+
+//**************************** header *******************************//
+
+.site-header {
+    // background-color: $color_header;
+    // height: 100vh;
+    position: fixed;
+    top: 0; 
+    right: 0;
+    width: 100%;
+    z-index: 100000;
+
+
+    .header-image {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .site-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            margin: 1rem;
+        }
+    }
+    }
+}
+
+.menu-main-menu-container  {
+    background-color: $color_header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #04c2c9;
+}
+
+#menu-main-menu {
+    padding: 0;
+    display: flex;
+    justify-content: space-around; 
+
+    li {
+        list-style-type: none;
+        padding: 0.5rem 1rem 0 1rem;
+    }
+
+    // li:focus:after {
+    //     border-bottom: 1px solid $color_accent;
+    //     padding-bottom: 0.5rem;
+
+    // }
+
+    // li:after {
+    //         display: block;
+    //         content: '';
+    //         padding-bottom: 0.5rem;
+    //         border-bottom: 1px solid $color_accent;
+    //         transform: scaleX(0);  
+    //         transition: all 300ms ease-in-out;     
+    // }
+
+    // li:hover:after {
+    //         transform: scaleX(1);
+    // } 
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $color_accent;
+    }
+}
+
+    #menu-main-menu a:active {
+        color: $color_accent;
+    }
+
+
+

@@ -1,0 +1,20 @@
+// *************************** header ***********************//
+
+.wp-block-button__link {
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    background-color: $color_accent;
+    border-color: $color_accent;
+    border-style: none;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 2rem;
+
+    &:hover {
+        background-color: $color_accent2;
+        color: $color_contact_form;
+        transition: all 0.5s ease;
+    }
+}
+
+//******************************** header *************************//
