@@ -18,10 +18,10 @@ get_header();
 
                 <div class="about-page-info">
 
-                    <img src ="<?php echo get_the_post_thumbnail_url( 57 , "medium" ); ?>" alt =""> 
+                    <img src ="<?php echo the_post_thumbnail_url( 'medium' ); ?>" alt =""> 
 
                     <div class="about-page-content">
-                        <?php echo $post_object->post_content; ?>
+                        <?php the_content(); ?>
                     </div>
         
 
