@@ -8,31 +8,18 @@ get_header();
   
   if ( is_page("projects") ) :  ?>
 
-<?php echo do_shortcode('[wonderplugin_slider id="1"]'); ?>
-
  
         <?php $post_id = 63; 
-                $post_object  = get_post( $post_id );  ?>
-
-       
-
-                <div class="projects-page-heading">
-                    <?php echo $post_object->post_title; ?> 
-                </div>
-
-                <!-- <?php $post_id = 130; 
-                $post_object  = get_post( $post_id );  ?>
-
-                <div class="projects-page-heading">
-                    <?php echo $post_object->post_title; ?>
-                    <?php echo $post_object->post_content; ?>
-
-                </div> -->
+                $post_object  = get_post( $post_id );
+                $post_object->post_title;   ?>
 
 
 <div class="projects-page">
 
     <div class="projects project-1">
+
+    <?php echo do_shortcode('[wonderplugin_slider id="1"]'); ?>
+
 
         <img src ="<?php echo get_the_post_thumbnail_url( 73, "medium" ); ?>" alt =""> 
 
