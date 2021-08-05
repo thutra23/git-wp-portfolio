@@ -100,8 +100,8 @@ get_header();
                     </div>
 
                     <div class="learn-more hide">
-                    
-                        <a href="<?php get_permalink($post_id); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?>
+                    <?php  ?>
+                        <a href="<?php echo get_permalink($post_id); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?>
                             <?php echo $post_object->post_excerpt; ?>
                         </a>
                     </div>
