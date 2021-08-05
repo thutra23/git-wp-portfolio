@@ -18,8 +18,6 @@ get_header();
 
     <div class="projects project-1">
 
-    <?php echo do_shortcode('[wonderplugin_slider id="1"]'); ?>
-
 
         <img src ="<?php echo get_the_post_thumbnail_url( 73, "medium" ); ?>" alt =""> 
 

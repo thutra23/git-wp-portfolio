@@ -40,9 +40,20 @@ if (is_page("resume") ): ?>
 
 if (is_page("contact") ): ?>
 
-    <?php	get_template_part( 'template-parts/content-contact' );?>                   
+    <?php	get_template_part( 'template-parts/content-contact' );?>    
+    
+    <?php endif; ?> 
+    
+<?php 
+
+
+if (is_single()): ?>
+
+    <?php	get_template_part( 'template-parts/content-single-project' );?>        
 
 <?php endif; ?> 
+
+
 
 
 
