@@ -5,6 +5,8 @@ get_header();
 
 ?>
 
+</main>
+
 <footer class="site-footer" id="site-footer">
 <?php 
          

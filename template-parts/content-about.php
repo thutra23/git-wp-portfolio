@@ -25,7 +25,6 @@ get_header();
                         <?php echo $post_object->post_content; ?>
                     </div>
         
-
     </div>
     </div>
 
