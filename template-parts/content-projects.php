@@ -10,8 +10,8 @@ get_header();
 
  
         <?php $post_id = 63; 
-                $post_object  = get_post( $post_id );
-                $post_object->post_title;   ?>
+                $post_object  = get_post( $post_id ); ?>
+                <?php echo $post_object->post_title; ?> 
 
 
 <div class="projects-page">
