@@ -2,10 +2,6 @@
 get_header(); 
 ?>
 
-<div id="primary" class="content-area">
-  <main id="main" class="site-main">
-
-
   <?php if ( is_home() ) : ?>
 
     <div class="home-page-header">
@@ -34,8 +30,7 @@ get_header();
 
     <div class="about-wrap">
 
-               
-
+            
 <div class="about-info">
         <div class="about-img">
 
@@ -284,9 +279,7 @@ get_header();
 
     </div>
 
-  </main>
 
-  
 
 <?php
 
