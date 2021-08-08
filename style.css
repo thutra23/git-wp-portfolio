@@ -392,6 +392,12 @@ input {
   }
 }
 
+@media screen and (min-width: 900px) {
+  .projects-page-heading {
+    font-size: 3rem;
+  }
+}
+
 .projects-page-heading + .projects-categories {
   margin-bottom: 3rem;
 }
@@ -788,6 +794,12 @@ input {
 @media screen and (min-width: 300px) {
   .home-contact-page .contact-wrap .contact-name {
     font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .home-contact-page .contact-wrap .contact-name {
+    font-size: 3rem;
   }
 }
 
