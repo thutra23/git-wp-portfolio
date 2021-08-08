@@ -917,8 +917,20 @@ body.single .entry-title {
   margin: 2rem;
 }
 
+@media screen and (min-width: 300px) {
+  .nav-links {
+    margin: 0;
+  }
+}
+
 .nav-links div {
   padding: 2rem;
+}
+
+@media screen and (min-width: 300px) {
+  .nav-links div {
+    margin-top: 7rem;
+  }
 }
 
 .single #main {
