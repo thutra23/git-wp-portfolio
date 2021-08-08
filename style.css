@@ -389,13 +389,14 @@ input {
 @media screen and (min-width: 300px) {
   .projects-page-heading {
     font-size: 3rem;
+    margin: 5rem;
   }
 }
 
 @media screen and (min-width: 900px) {
   .projects-page-heading {
     font-size: 3rem;
-    margin-top: 5rem;
+    margin-top: 8rem;
   }
 }
 
@@ -423,6 +424,12 @@ input {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+@media screen and (min-width: 300px) {
+  .home-page-header img {
+    margin-top: 3rem;
+  }
 }
 
 .home-page-header h2 {
@@ -938,6 +945,12 @@ body.single .entry-title {
 }
 
 /* 8. Category page   =================================== */
+@media screen and (min-width: 300px) {
+  .archive .site-main {
+    height: 150vh;
+  }
+}
+
 .category-posts {
   margin: auto;
   height: 100vh;
@@ -1109,6 +1122,12 @@ body.single .entry-title {
 
 .archive-title {
   margin: 3rem;
+}
+
+@media screen and (min-width: 300px) {
+  .archive-title {
+    margin-top: 5rem;
+  }
 }
 
 .posts-navigation {

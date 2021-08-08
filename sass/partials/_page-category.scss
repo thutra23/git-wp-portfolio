@@ -1,3 +1,9 @@
+.archive .site-main {
+  @media screen and (min-width: 300px) {
+    height: 150vh;
+  }
+}
+
 .category-posts {
   margin: auto;
   height: 100vh;
@@ -141,6 +147,10 @@
 
 .archive-title {
   margin: 3rem;
+
+  @media screen and (min-width: 300px) {
+    margin-top: 5rem;
+  }
 }
 
 .posts-navigation {
