@@ -4,9 +4,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    // position: fixed; 
+    // position: fixed;
     width: 100%;
-
 
     .social-menu {
         display: flex;
@@ -24,13 +23,11 @@
             text-decoration: none;
             font-size: 2rem;
         }
-    
     }
 }
 
-
-
-.social-menu a[href^="https://www.facebook.com"]:before {
+.social-menu a[href^="https://www.facebook.com"]:before
+{
     display: inline-block;
     font-style: normal;
     font-variant: normal;
@@ -40,8 +37,8 @@
     content: "\f09a";
 }
 
-
-.social-menu a[href^="https://github.com"]:before {
+.social-menu a[href^="https://github.com"]:before
+{
     display: inline-block;
     font-style: normal;
     font-variant: normal;
@@ -51,7 +48,8 @@
     content: "\f09b";
 }
 
-.social-menu a[href^="https://www.linkedin.com"]:before {
+.social-menu a[href^="https://www.linkedin.com"]:before
+{
     display: inline-block;
     font-style: normal;
     font-variant: normal;
@@ -60,8 +58,6 @@
     font-family: "Font Awesome 5 Brands";
     content: "\f0e1";
 }
-
-
 
 .page-id-2 .site-footer {
     margin-top: 17rem;

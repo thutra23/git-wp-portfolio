@@ -1,62 +1,76 @@
-<?php 
+<?php get_header(); ?>
 
-get_header(); ?>
+<?php if (is_page("about")) :  ?>
 
-<?php 
+    <div class="about-page-title">
+        <?php //echo $post_object->post_title;
+        the_title();
+        ?>
+    </div>
 
-    if (is_page("about") ): ?>
-   
-		<?php	get_template_part( 'template-parts/content-about' );?>
+    <div class="about-page-info">
+        <?php the_post_thumbnail('medium'); ?>
 
-<?php endif; ?>
+        <div class="about-page-content">
+            <?php the_content(); ?>
+        </div>
 
+    </div>
 
-<?php 
-
-    if (is_page("projects") ): ?>
-
-        <?php	get_template_part( 'template-parts/content-projects' );?>
-
-    <?php endif; ?>
-
-
-<?php 
-        if (is_page("services") ): ?>
-
-            <?php	get_template_part( 'template-parts/content-services' );?>                   
-
-    <?php endif; ?> 
+<?php
+endif;
 
 
-<?php 
+if (is_page("projects")) : ?>
 
-if (is_page("resume") ): ?>
+    <h1 class="projects-page-heading">PROJECTS</h1>
 
-    <?php	get_template_part( 'template-parts/content-resume' );?>                   
+    <div class="projects-categories">
 
-<?php endif; ?> 
+<?php
 
-<?php 
+$categories = get_categories();
+foreach($categories as $category) {
+   echo '<div class="col-md-4"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>';
+}
+?>
 
-if (is_page("contact") ): ?>
+</div>
 
-    <?php	get_template_part( 'template-parts/content-contact' );?>    
-    
-    <?php endif; ?> 
-    
-<?php 
+    <?php 
+    $args = array(
+        'post_type' => 'post', 
+        'posts_per_page'  => -1,
+        'post__not_in' => array(99, 105)
+      );
+    $posts = new WP_Query($args);
 
-
-if (is_single()): ?>
-
-    <?php	get_template_part( 'template-parts/content-single-project' );?>        
-
-<?php endif; ?> 
+?>
 
 
+<div class="projects-page">
+<?php if ( $posts -> have_posts()):
+while ($posts -> have_posts()):
+    $posts -> the_post();
+    get_template_part('template-parts/content-projects');
+endwhile;
 
+endif; 
 
+endif;
+
+?>
+
+</div>
 
 
 <?php
-get_footer();
+if (is_page("contact")) : 
+    
+
+  get_template_part('template-parts/content-contact'); 
+
+ endif; 
+
+
+ get_footer(); 

@@ -1,0 +1,65 @@
+.contact-page {
+  display: flex;
+  width: 100vw;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 900px) {
+    height: 90vh;
+  }
+
+  .contact-page-info,
+  .contact-page-thumbnail {
+    margin: 7rem;
+  }
+}
+
+.contact-page-info {
+  @media screen and (min-width: 300px) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: 900px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.contact-page-title {
+  @media screen and (min-width: 900px) {
+    justify-self: center;
+    align-self: center;
+    font-size: 2rem;
+  }
+}
+
+.contact-page-content p {
+  @media screen and (min-width: 900px) {
+    font-size: 2rem;
+  }
+}
+
+.contact-page-thumbnail {
+  @media screen and (min-width: 300px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 600px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+}
+
+div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
+  width: 30rem;
+}
+
+// div.wpforms-container-full
+//   .wpforms-form
+//   .wpforms-field:not(.wpforms-field-phone):not(.wpforms-field-select-style-modern) {
+//   width: 70%;
+// }

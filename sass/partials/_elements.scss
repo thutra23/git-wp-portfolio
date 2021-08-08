@@ -1,16 +1,29 @@
 body {
-    width: 100%;
-    min-height: 100%;
-    color: $color_body_text; 
+  width: 100%;
+  min-height: 100%;
+  color: $color_body_text;
+  line-height: 1.5;
 
-    a, button {
-        color: $color_body_text;  
+  a,
+  button {
+    color: $color_body_text;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: $color_body_bg;
+
+  article {
+    height: 80vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+
+    h2.entry-title {
+      font-size: 3rem;
+      margin: 2rem;
     }
+  }
 }
-
-body  {
-    margin: 0;
-    background-color: $color_body_bg;
-}
-
-

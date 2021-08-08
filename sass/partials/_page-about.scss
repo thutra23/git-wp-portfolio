@@ -1,57 +1,59 @@
 /////////////////////// ABOUT PAGE ////////////////////////////////
 .about-page {
-    background-color: $color_body_bg;
-    height: 90vh;
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem;
+  background-color: $color_body_bg;
+  height: 90vh;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
 }
 
 .about-page-info {
-    width: 70%;
-    color: $color_text_black;
-    font-weight: bold; 
-    display: flex;
+  width: 70%;
+  color: $color_text_black;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  @media screen and (min-width: 300px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 900px) {
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+    width: 80%;
+  }
 
-     p {
-            font-weight: 200;
-            font-size: 1.5rem;
-        }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    width: 60%;
+  }
 
-    img {
-            margin: 3rem;
-        }
+  p {
+    font-weight: 200;
+    font-size: 1.5rem;
+  }
 
-        .about-page-content {
-            font-size: 2rem;
-            color: $color_body_text;
+  img {
+    margin: 3rem;
+  }
 
-        }
-    }
+  .about-page-content {
+    font-size: 2rem;
+    color: $color_body_text;
+  }
+}
 
-
-    .about-page-title {
-            margin: 4rem;
-            font-size: 3rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            text-align: center;
-
-    }
-    
-
-
-
-
-
-
-
-
+.about-page-title {
+  margin: 4rem;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
 
 ////////////////////// ABOUT PAGE end////////////////////////

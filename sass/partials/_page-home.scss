@@ -6,9 +6,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
-  p {
-    font-size: 2rem;
+  h2 {
+    margin: 0;
+  }
+
+  @media screen and (min-width: 300px) {
+    height: 80vh;
   }
 }
 
@@ -18,10 +23,20 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 70vh;
+
+  @media screen and (min-width: 300px) {
+    height: 120vh;
+  }
+  @media screen and (min-width: 600px) {
+    height: 90vh;
+  }
+  @media screen and (min-width: 900px) {
+    height: 70vh;
+  }
 }
 
 .about-wrap {
-  // width: 80%;
   color: $color_text_black;
   font-weight: bold;
   display: grid;
@@ -29,6 +44,20 @@
   justify-content: center;
   align-items: center;
   width: 70%;
+
+  @media screen and (min-width: 300px) {
+    display: block;
+    padding: 0;
+  }
+
+  @media screen and (min-width: 900px) {
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+  }
 }
 
 .about-info {
@@ -36,7 +65,6 @@
   flex-direction: column;
 
   .about-img {
-    // margin: 3rem;
     display: flex;
     justify-content: center;
   }
@@ -51,23 +79,60 @@
       width: 80%;
       font-weight: 400;
       text-align: center;
+
+      @media screen and (min-width: 300px) {
+        font-size: 1rem;
+        width: 100%;
+      }
+
+      @media screen and (min-width: 900px) {
+        width: 70%;
+      }
     }
   }
 }
 
-.about-title {
-  margin: 4rem;
+.about-title,
+.projects-title {
+  margin-bottom: 2rem;
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
   border-bottom: 2px solid $color_text_black;
   color: $color_text_black;
+
+  @media screen and (min-width: 300px) {
+    font-size: 2rem;
+  }
+}
+
+.projects-title {
+  margin: 4rem;
 }
 
 .about-skills {
   color: $color_text_black;
   justify-self: center;
   font-size: 1.5rem;
+
+  ul {
+    @media screen and (min-width: 300px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+
+    @media screen and (min-width: 600px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (min-width: 900px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 
   .skills-title {
     display: none;
@@ -77,9 +142,17 @@
     list-style-type: none;
     border: 1px solid $color_accent2;
     border-radius: 1rem;
-    padding: 0.5rem 8rem;
+    padding: 0.5rem 2rem;
     background-color: $color_accent2;
     margin: 0.5rem;
+
+    @media screen and (min-width: 300px) {
+      font-size: 1rem;
+    }
+
+    @media screen and (min-width: 900px) {
+      padding: 0.5rem 4rem;
+    }
   }
 }
 
@@ -91,14 +164,24 @@
 }
 
 .projects-wrap {
-  // width: 70%;
   height: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: flex-start;
-  // grid-gap: 0.5rem 0;
   margin: 3rem;
+
+  @media screen and (min-width: 300px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (min-width: 600px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (min-width: 900px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .home-projects {
@@ -110,6 +193,20 @@
     width: 20rem;
     object-fit: cover;
     transition: all 0.5s ease-in-out;
+
+    @media screen and (min-width: 300px) {
+      height: auto;
+    }
+
+    @media screen and (min-width: 600px) {
+      width: 15rem;
+      height: auto;
+    }
+
+    @media screen and (min-width: 900px) {
+      width: 20rem;
+      height: auto;
+    }
   }
 }
 
@@ -122,43 +219,153 @@
   transition: all 0.5s ease-in-out;
 }
 
-.learn-more {
-  font-weight: bold;
-  padding: 0.5rem 0;
-  margin: 1rem 5rem;
-  background-color: $color_accent;
-  transition: all 0.5s ease-in-out;
-}
-
-.projects-name {
-  font-weight: bold;
-  padding: 1rem 0;
-  background-color: $color_accent;
-  transition: all 0.5s ease-in-out;
-}
-
 .projects-info {
   transition: all 0.5s ease-in-out;
+  padding: 1rem 0;
+  background-color: $color_accent;
   opacity: 0;
   position: absolute;
   width: 20rem;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  @media screen and (min-width: 300px) {
+    width: 10rem;
+    font-size: 1rem;
+  }
+  @media screen and (min-width: 900px) {
+    width: 20rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }
 
-.home-projects-title {
-  margin: 2rem;
-  font-weight: bolder;
-  font-size: 3rem;
-  border-bottom: 1px solid $color_body_text;
-  text-transform: uppercase;
+.projects-title {
+  color: $color_body_text;
+  border-bottom-color: $color_body_text;
+}
+
+.projects-categories {
+  display: flex;
+  justify-content: center;
   text-align: center;
+
+  @media screen and (min-width: 300px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.4rem;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 600px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (min-width: 900px) {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  div {
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    border: 1px solid $color_accent;
+    background-color: $color_accent;
+    transition: all 0.5s ease;
+
+    @media screen and (min-width: 300px) {
+      margin-right: 0.3rem;
+    }
+
+    &:nth-child(6) {
+      display: none;
+    }
+
+    &:hover {
+      background-color: $color_accent2;
+      border-color: $color_accent2;
+    }
+
+    &:hover a {
+      color: $color_contact_form;
+    }
+
+    a {
+      text-decoration: none;
+      transition: all 0.5s ease;
+    }
+  }
 }
 
 .home-contact-page {
-  height: 50vh;
+  width: 100vw;
+  height: 80vh;
   background-color: $color_contact_form;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .contact-wrap {
+    width: 70%;
+    justify-self: center;
+
+    .contact-name {
+      font-size: 3rem;
+
+      @media screen and (min-width: 300px) {
+        font-size: 2rem;
+      }
+    }
+
+    @media screen and (min-width: 900px) {
+      .contact-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  #wpforms-45-field_1 {
+    width: 50rem;
+  }
+
+  .contact-form {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rem;
+
+    p {
+      margin-right: 19rem;
+    }
+  }
 }
 
 /////////////////////////// home end /////////////////////////////
+
+.home-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 300px) {
+  .home-contact-page > .contact-wrap {
+    width: 100%;
+  }
+
+  #wpforms-45-field_1-container > .wpforms-field-row {
+    display: flex;
+    flex-direction: column;
+  }
+}

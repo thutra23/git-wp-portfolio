@@ -1,32 +1,22 @@
-<?php 
-
-get_header();
-
-?>
 
 
-  <?php 
-  
-  if ( is_page("contact") ) :  ?>
+<div class="contact-page">
 
-    <div class="contact-page">
+        <!-- <div class="contact-page-thumbnail">
+            <?php
+                the_post_thumbnail('medium'); ?>
+            </div> -->
+            
+            <div class="contact-page-info">
+                <div class="contact-page-title">
+                    <?php the_title("<h1>", "</h1>"); ?> 
+                </div>
+                
+                <div class="contact-page-content">
+                    <?php the_content(); ?>
+                </div>
+        </div>
 
-         <img src ="<?php echo get_the_post_thumbnail_url( 99 , "medium" ); ?>" alt =""> 
+</div>
 
-
-        <?php $post_id = 99;
-                $post_object  = get_post( $post_id ); 
-                echo $post_object->post_title;
-                echo $post_object->post_content;
-                //  echo $post_object -> post_content;
-
-        ?>
-    </div>
-
-<?php 
-
-endif;
-
-
-get_footer();
 
