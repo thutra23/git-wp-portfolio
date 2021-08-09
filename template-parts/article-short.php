@@ -22,7 +22,7 @@
 
 <div class="category-wrapper">
      <i class="fas fa-folder"></i>
-     <?php the_category(' '); ?>
+     <?php the_category(" ", " , "); ?>
 </div>
 
 <div class="tags-wrapper">

@@ -289,7 +289,7 @@
       margin-right: 0.3rem;
     }
 
-    &:nth-child(6) {
+    &:nth-child(2) {
       display: none;
     }
 
@@ -309,6 +309,15 @@
   }
 }
 
+.contact-form .wpforms-field-container {
+  #wpforms-45-field_7-container .wpforms-field-label #wpforms-45-field_1,
+  #wpforms-45-field_7-container .wpforms-field-label #wpforms-45-field_7 {
+    @media screen and (min-width: 600px) and (max-width: 1100px) {
+      max-width: 100%;
+    }
+  }
+}
+
 .home-contact-page {
   width: 100vw;
   height: 80vh;
@@ -321,8 +330,13 @@
     width: 70%;
     justify-self: center;
 
+    .contact-form p {
+      font-weight: 400;
+    }
+
     .contact-name {
       font-size: 3rem;
+      font-weight: 400;
 
       @media screen and (min-width: 300px) {
         font-size: 2rem;
@@ -343,7 +357,7 @@
     }
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   #wpforms-45-field_1 {
     width: 50rem;
   }

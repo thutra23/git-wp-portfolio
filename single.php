@@ -1,6 +1,8 @@
 <?php
 get_header();
 
+
+
 if (have_posts()) :
     // echo "We have posts!";
     while (have_posts()) :

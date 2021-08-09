@@ -17,6 +17,7 @@ if (!function_exists('rachelportfolio_setup')) :
          'menu-main'       =>    'Main Menu',
          'menu-footer'     =>    'Secondary Menu',
          'menu-social'     =>    'Social Menu',
+         'menu-category'   =>    'Category Menu'
       ));
    }
 

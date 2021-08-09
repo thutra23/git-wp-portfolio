@@ -16,6 +16,14 @@ body.single {
       justify-content: center;
       align-items: center;
       flex-direction: column;
+
+      li {
+        font-weight: 200;
+
+        span {
+          color: white;
+        }
+      }
     }
   }
 
@@ -74,4 +82,14 @@ body.single {
 
 .single #main {
   height: 150vh;
+}
+
+@media screen and (min-width: 900px) {
+  .postid-226 .entry-content li {
+    width: 70%;
+  }
+
+  .postid-73 .nav-links div {
+    margin-top: 12rem;
+  }
 }

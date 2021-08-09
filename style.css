@@ -46,6 +46,10 @@ body {
   line-height: 1.5;
 }
 
+body li span {
+  color: #E8E8E8;
+}
+
 body a,
 body button {
   color: #E8E8E8;
@@ -67,6 +71,24 @@ body article {
 body article h2.entry-title {
   font-size: 3rem;
   margin: 2rem;
+}
+
+.category-wrapper .fas .fa-folder i {
+  color: #04c2c9;
+}
+
+.nav-links div a {
+  text-decoration: none;
+  color: #04c2c9;
+  font-weight: bolder;
+}
+
+.nav-links div a:hover {
+  text-decoration: underline;
+}
+
+li span {
+  color: #E8E8E8;
 }
 
 /* 3. Buttons  ================================== */
@@ -380,7 +402,7 @@ input {
 
 .projects-page-heading {
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
   text-align: center;
   margin: 3rem;
@@ -763,7 +785,7 @@ input {
   }
 }
 
-.projects-categories div:nth-child(6) {
+.projects-categories div:nth-child(2) {
   display: none;
 }
 
@@ -781,6 +803,13 @@ input {
   transition: all 0.5s ease;
 }
 
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+  .contact-form .wpforms-field-container #wpforms-45-field_7-container .wpforms-field-label #wpforms-45-field_1,
+  .contact-form .wpforms-field-container #wpforms-45-field_7-container .wpforms-field-label #wpforms-45-field_7 {
+    max-width: 100%;
+  }
+}
+
 .home-contact-page {
   width: 100vw;
   height: 80vh;
@@ -795,8 +824,13 @@ input {
   justify-self: center;
 }
 
+.home-contact-page .contact-wrap .contact-form p {
+  font-weight: 400;
+}
+
 .home-contact-page .contact-wrap .contact-name {
   font-size: 3rem;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 300px) {
@@ -820,7 +854,7 @@ input {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   #wpforms-45-field_1 {
     width: 50rem;
   }
@@ -870,6 +904,16 @@ body.single .entry-footer ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+body.single .entry-content ul li,
+body.single .entry-footer ul li {
+  font-weight: 200;
+}
+
+body.single .entry-content ul li span,
+body.single .entry-footer ul li span {
+  color: white;
 }
 
 body.single .entry-title {
@@ -944,10 +988,31 @@ body.single .entry-title {
   height: 150vh;
 }
 
+@media screen and (min-width: 900px) {
+  .postid-226 .entry-content li {
+    width: 70%;
+  }
+  .postid-73 .nav-links div {
+    margin-top: 12rem;
+  }
+}
+
 /* 8. Category page   =================================== */
 @media screen and (min-width: 300px) {
   .archive .site-main {
+    height: 170vh;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .archive .site-main {
     height: 150vh;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .archive .site-main {
+    height: 120vh;
   }
 }
 
@@ -1120,6 +1185,24 @@ body.single .entry-title {
   justify-content: center;
 }
 
+@media screen and (min-width: 300px) {
+  .archive #primary .nav-links {
+    margin-left: 12rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .archive #primary .nav-links {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .archive #primary .nav-links div {
+    margin-top: 0;
+  }
+}
+
 .archive-title {
   margin: 3rem;
 }
@@ -1149,6 +1232,29 @@ body.single .entry-title {
   .archive.category-8 .entry-title a,
   .tag-22 .entry-title a {
     font-size: 1.5rem;
+  }
+}
+
+.category-wrapper a,
+.tags-wrapper a {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.category-wrapper a:hover,
+.tags-wrapper a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 600px) {
+  .tag-18 .category-article .entry-title {
+    transform: translate(-50%, -500%);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .tag-18 .category-article .entry-title {
+    transform: translate(-50%, -450%);
   }
 }
 
@@ -1191,6 +1297,10 @@ body.single .entry-title {
     align-self: center;
     font-size: 2rem;
   }
+}
+
+.contact-page-content p {
+  font-weight: 400;
 }
 
 @media screen and (min-width: 900px) {

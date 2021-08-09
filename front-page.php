@@ -83,6 +83,13 @@ foreach($categories as $category) {
 }
 ?>
 
+    <!-- <?php wp_list_categories( array(
+        'orderby'    => 'name',
+        'exclude'    => array( 1 )
+    ) ); ?> 
+ -->
+
+
 </div>
 
 <?php 
