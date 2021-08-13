@@ -28,3 +28,11 @@
 
     </div>
 </article>
+
+<?php
+
+the_post_navigation(array(
+        'prev_text'   =>   'Previous Post: %title',
+        'next_text'   =>   'Next Post: %title',
+        'excluded_terms' => '1'
+    ));
